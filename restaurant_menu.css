@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #060606;
+    display: flex;
+    justify-content: space-between;
+}
+h1 {
+    color:black;
+}
+#menu-items {
+    background-color: #70abbd;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    box-shadow: 10px black;
+    width: 500px;
+}
+#menu-filters{
+    background-color: #be7235;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    box-shadow: 10px black;
+    width: 500px;
+    height: 400px;
+}
+#category-filter{
+    width: 50%;
+}
+#menu-filters h2, #menu-items h2 {
+    margin-top: 0;
+}
+#dietary-filters label, #price-filter label {
+    display: block;
+    margin: 5px 0;
+}
+button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.menu-item {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+.menu-item:last-child {
+    border-bottom: none;
+}
+.menu-item h3 {
+    color:rgb(221, 125, 7);
+}

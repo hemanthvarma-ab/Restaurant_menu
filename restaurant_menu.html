@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="restaurant_menu.css">
+</head>
+<body>
+    <div id="menu-items">
+        <h2>Menu Items</h2>
+    </div>
+    <div id="menu-filters">
+        <h2>Select Menu</h2>
+        <select id="category-filter">
+            <option value="all">All Categories</option>
+            <option value="starters">Starters</option>
+            <option value="mains">Main Course</option>
+            <option value="desserts">Desserts</option>
+            <option value="beverages">Beverages</option>
+        </select>
+        <div id="dietary-filters">
+            <h3>Dietary Preferences :</h3>
+            <label><input type="checkbox" id="vegan" value="vegan"> Vegan</label>
+            <label><input type="checkbox" id="gluten-free" value="gluten-free"> Gluten-Free</label>
+            <label><input type="checkbox" id="vegetarian" value="vegetarian"> Vegetarian</label>
+            <label><input type="checkbox" id="No-Diet" value="No-Diet"> No-Diet</label>
+        </div>
+
+        <div id="price-filter">
+            <h3>Price Range :</h3>
+            <label><input type="radio" name="price" value="under-10"> Under $10</label>
+            <label><input type="radio" name="price" value="10-20"> $10 - $20</label>
+            <label><input type="radio" name="price" value="over-20"> Over $20</label>
+        </div><br>
+        <center><button id="submit-filter">Submit</button></center>
+    </div>
+
+    <script src="restaurant_menu.js"></script>
+</body>
+</html>
