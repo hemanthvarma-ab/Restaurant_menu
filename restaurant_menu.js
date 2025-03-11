@@ -8,6 +8,7 @@ const menuItems = [
     { category: "beverages", name: "Chocolate Milkshake", description: "Sweet, cold beverage made from ice cream, milk, and chocolate.,topped with whipped cream and chocolate syrup", price: 6, dietary: ["gluten-free"] },
     { category: "beverages", name: "Dalgona Coffee ", description: "A Korean coffee drink made with whipped instant coffee, sugar, water, and milk", price: 11, dietary: ["vegetarian", "gluten-free"] },
 ];
+
 function displayMenuItems(items) {
     const menuContainer = document.getElementById("menu-items");
     menuContainer.innerHTML = "<h2>Menu Items</h2>";
@@ -24,6 +25,7 @@ function displayMenuItems(items) {
         menuContainer.appendChild(menuItemElement);
     });
 }
+
 function applyFilters() {
     const category = document.getElementById("category-filter").value;
     const vegan = document.getElementById("vegan").checked;
@@ -42,6 +44,7 @@ function applyFilters() {
         return true;
     });
     displayMenuItems(filteredItems);
+
 }
 document.getElementById("submit-filter").addEventListener("click", applyFilters);
 displayMenuItems(menuItems);

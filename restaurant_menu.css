@@ -1,3 +1,6 @@
+h1 {
+    color:rgb(248, 247, 247);
+}
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
@@ -5,9 +8,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
-h1 {
-    color:black;
-}
+
 #menu-items {
     background-color: #70abbd;
     border: 2px solid black;
